@@ -1,0 +1,111 @@
+@charset "UTF-8";
+body{
+	font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(#FFF, #CCC);
+    height: 100%;
+    text-align: center;
+    margin:5%;
+}
+
+h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 100px;
+    text-shadow: 1px 2px 5px;
+}
+
+p{
+    margin: 0;
+}
+
+#machineItems a:hover{
+    background: #AAF
+}
+
+
+
+#machineItems{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	
+}
+
+#machineItems a{
+    
+    background-color: #DDF;
+    color: red;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: auto;
+    margin: 4%;
+    text-decoration: none;
+    padding: 5%;
+    margin-bottom: 10%;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #444;
+}
+#machine{
+    display: inline-block;
+    padding: 10px;
+    width: 40%;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #444;
+    
+}
+
+h1{
+  
+}
+
+.buyButton{
+    padding: 10px;
+    
+}
+
+#returnToMenuButton{
+    
+}
+
+#door{
+    margin-top:5px;
+    border-style: groove;
+    border-width: 2px;
+    border-radius: 5px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: #444;
+    background: #AAA;
+}
+
+#itemSelection{
+    display: flex;
+    align-items: center;
+    margin-left:20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    justify-content: space-between;
+    font-size: 200%;
+}
+
+
+
+#itemPage{
+	font-size: 200%;
+	text-decoration: none;
+}
+
+#itemPage div{
+	margin: 10%;
+}
+
+#itemPage a{
+	text-decoration: none;
+	color: green;
+	
+}

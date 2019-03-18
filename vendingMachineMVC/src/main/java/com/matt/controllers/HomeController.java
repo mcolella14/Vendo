@@ -31,8 +31,9 @@ public class HomeController {
 	@RequestMapping(value={"/","/home"})
 	public String displayHome(HttpServletRequest request, HttpSession session) {
 		request.setAttribute("items", itemDao.getAllItems());
-		session.setAttribute("balance", formatter.format(balance.getBalance()));
-
+		if(session.isNew()) {
+		session.setAttribute("balance", formatter.format(0));
+		}
 		return "home";
 	}
 	

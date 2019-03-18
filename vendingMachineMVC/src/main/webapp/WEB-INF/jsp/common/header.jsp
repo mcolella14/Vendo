@@ -7,11 +7,16 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-    <h1>VENDO</h1>
-    <nav>
-	<c:url var ="home" value="/home"/>
-	<a href="${home}">Home</a>
-	<c:url var ="add" value="/balance"></c:url>
-	<a href="${add}">Add to Balance</a>
-	Balance: ${balance}
+	
+	    <nav>
+	    <div id="header">
+	    <div><h1>VENDO</h1></div>
+		<c:url var ="home" value="/home"/>
+		<div><a href="${home}">Home</a></div>
+		<br>
+		<c:url var ="add" value="/balance"></c:url>
+		<div><a href="${add}">Add to Balance</a></div>
+		<br>
+		<div>Balance: ${balance}</div>
+	</div>
 </nav>

@@ -24,7 +24,7 @@
    	 	<c:if test="${item.price > balanceNum}"><p>Balance is too low</p></c:if>
    	 	
    	 	<c:if test="${item.price <= balanceNum && item.quantity > 0}">
-   	 		<input type="submit" value="Buy">
+   	 		<input id= "submitButton" type="submit" value="BUY"/>
    	 	</c:if>
    	 	
    	 </form> 

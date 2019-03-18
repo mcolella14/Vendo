@@ -7,8 +7,15 @@
         <div id="machineItems">
         <c:forEach var="item" items="${items}">
       
+      	
         	<c:url var="itemPage" value="/item?slot=${item.slotNumber}"/>
-        	 <a id="machineItem" href="${itemPage}">${item.slotNumber} Q:${item.quantity}</a>
+        	 <a 
+        	 
+        	 id="machineItem" href="${itemPage}">
+        	 <c:if test="${item.quantity < 1}"><p id="soldOut">SOLD OUT</p></c:if>
+        	 ${item.slotNumber}
+        	 	
+        	 </a>
         	
         </c:forEach>
         </div>

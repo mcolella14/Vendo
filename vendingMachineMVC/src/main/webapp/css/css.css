@@ -1,22 +1,61 @@
 @charset "UTF-8";
 body{
 	font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(#FFF, #CCC);
+    margin:0;
     height: 100%;
     text-align: center;
-    margin:5%;
+    
 }
 
 h1{
     margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 100px;
+    margin-top: 0;
+    font-size: 200%;
     text-shadow: 1px 2px 5px;
 }
 
 p{
     margin: 0;
 }
+
+nav a{
+	text-decoration: none;
+	color: #333;
+	background-color: #DDF;
+	padding: 5px;
+	border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #444;
+    margin: 3px;
+}
+
+
+
+nav{
+	color: #333;
+	padding: 10px;
+}
+
+#balance{
+	 margin-top: 20%;
+	 height:100%;
+}
+
+#header{
+	background: #FDD;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position : fixed;
+	width: 25%;
+	height: 30%;
+	border-radius: 5px;
+	margin: 0;
+	box-shadow: 3px 3px 5px 6px #aaa;
+	
+}
+
 
 #machineItems a:hover{
     background: #AAF
@@ -34,7 +73,7 @@ p{
 #machineItems a{
     
     background-color: #DDF;
-    color: red;
+    color: #E88;
     margin-top: 20px;
     padding-bottom: 20px;
     width: auto;
@@ -50,11 +89,16 @@ p{
 #machine{
     display: inline-block;
     padding: 10px;
+    padding-bottom: 30px;
+    margin-top: 20%;
+    margin-bottom: 5%;
     width: 40%;
     border-style: solid;
     border-radius: 10px;
     border-width: 2px;
     border-color: #444;
+    box-shadow: 6px 6px 10px 12px #aaa;
+    
     
 }
 
@@ -62,10 +106,7 @@ h1{
   
 }
 
-.buyButton{
-    padding: 10px;
-    
-}
+
 
 #returnToMenuButton{
     
@@ -98,14 +139,37 @@ h1{
 #itemPage{
 	font-size: 200%;
 	text-decoration: none;
+	margin-bottom: 5%;
 }
 
 #itemPage div{
-	margin: 10%;
+	margin: 5%;
 }
+
+input[type=submit]{
+	font-size: 150%;
+    text-decoration: none;
+	color: #333;
+	background-color: #DDF;
+	padding: 5px;
+	border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #444;
+    margin: 3px;
+}
+
+input[type="submit"]:hover {
+    background: #AAF;
+}
+	
+
 
 #itemPage a{
 	text-decoration: none;
 	color: green;
-	
+}
+
+#soldOut{
+	font-size: 50%;
 }

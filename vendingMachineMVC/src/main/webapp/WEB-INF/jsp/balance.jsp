@@ -1,4 +1,7 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <%@include file="common/header.jsp"%>
+<div id="balance">
 <p>Current Balance ${balance}</p>
 <c:url var="bal" value="/balance"/>
 <form method="POST" action="${bal}">
@@ -14,4 +17,5 @@
 	</select>
 	<input type="submit" value="Add to Balance">
 </form>
+</div>
 <%@include file="common/footer.jsp"%>
